@@ -65,7 +65,7 @@ jobs:
           Please wait for a while.
           Runtime: ${{ steps.test-input.outputs.runtime }}
       with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
+        # github-token: ${{secrets.GITHUB_TOKEN}}
         result-encoding: string
         script: |
           github.rest.issues.createComment({
