@@ -73,7 +73,7 @@ jobs:
       uses: actions-rs/tarpaulin@v0.1
       with:
         version: 0.22.0
-        args: '-v --no-fail-fast --workspace -t 300 -e astar-collator xcm-tools local-runtime shibuya-runtime shiden-runtime astar-runtime integration-tests --exclude-files vendor/* bin/*'
+        args: '--workspace -e astar-collator xcm-tools local-runtime shibuya-runtime shiden-runtime astar-runtime integration-tests --exclude-files vendor/* bin/* runtime/*'
         out-type: Xml
 
     - name: Code Coverage Summary Report
